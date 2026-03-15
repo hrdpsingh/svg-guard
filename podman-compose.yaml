@@ -1,0 +1,11 @@
+services:
+  svg-guard:
+    build:
+      context: .
+      dockerfile: Containerfile
+    container_name: svg-guard
+    volumes:
+      - .:/app
+    command: sleep infinity
+    init: true
+    image: svg-guard
